@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://www.cewlab.org/sitemap.xml
+Sitemap: https://ecmlab.github.io/cewlab-site/sitemap.xml
