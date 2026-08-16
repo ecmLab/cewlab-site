@@ -31,10 +31,20 @@ latest_posts:
   limit: 3
 ---
 
-The **Clean Energy and Water (CEW) Laboratory** works to push the development of sustainable
-energy and environment. Our scientific target is to understand the coupling between
-**electro-chemo-mechanics**, **electrochemical ion insertion**, and their application in
-**energy storage** and **water purification**.
+A battery is a structure that changes shape while it works. Lithium plates into a ceramic that
+cannot accommodate it, cathode particles swell and crack away from their conductive network, and a
+separator that was mechanically sound at assembly is fractured after fifty cycles. **Chemistry sets
+what a cell could store; mechanics decides how long it survives storing it.**
+
+That coupling — **reactive mechanics**, the behavior of solids that deform while they react — is
+what the **Clean Energy and Water (CEW) Laboratory** studies, and it is the barrier standing between
+solid-state batteries and the manufacturing scale-up the field is now attempting.
+
+The same physics governs ion transport through a membrane under load, so our program spans two
+application domains that share a mechanism: **electrochemical energy storage**, and **separation and
+recovery of critical materials**. Both are pursued the same way — first-principles and
+machine-learned simulation to establish mechanism, continuum modeling to reach device scale, and
+in-house electrochemistry to test the prediction.
 
 ## How we work
 

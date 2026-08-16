@@ -2,52 +2,61 @@
 layout: page
 permalink: /teaching/
 title: teaching
-description: Courses taught at RIT and UC Berkeley.
+description: Courses, course development, and mentoring.
 nav: true
 nav_order: 5
 redirect_from:
   - /about-me
 ---
 
-<!--
-Migrated verbatim from the old Wix page /about-me (mislabelled: its slug said "about-me"
-while the page was Teaching). Terms are as listed there; the page was last published
-2024-12-02, so RIT terms after Fall 2022 are missing and need adding.
--->
+> Mechanical engineering students graduate into problems their textbooks usually do not yet
+> contain. The students I taught in 2021 are now designing battery packs whose failure modes were
+> research questions when they sat in my classroom. My obligation is not to transmit a settled body
+> of knowledge but to leave students able to reason about systems no one has fully characterized yet.
 
-## Rochester Institute of Technology
+## Courses at RIT
 
-### Mechanics of Materials (Strength)
-*Undergraduate · Fall 2021, Spring 2022, Fall 2022*
+### MECE-789 · Continuum Mechanics
+*Graduate · Spring 2024, Spring 2025, Spring 2026 · next offered Spring 2027*
+
+A graduate course designed and developed from scratch in the CEW Lab's own subject area. Built on
+first-principles derivation, with a live research application attached to every major result and
+open-ended investigative problem sets in place of short exercises.
+
+### MECE-529 / 629 · Renewable Energy Systems
+*Dual-listed undergraduate and graduate · Fall 2024, Fall 2025 · next offered Fall 2026*
+
+Taken over to keep a graduate energy elective in the department's rotation. Currently being revised
+with updated battery and energy content and an applied-AI component — machine learning for battery
+lifetime prediction, and machine vision for manufacturing quality control.
+
+### MECE-203 · Strength of Materials I
+*Undergraduate core · Fall 2021, Spring 2022, Fall 2022*
 
 Fundamental principles of the mechanics of deformable media — stress, strain, deflection, and the
-relationships among them. Covers the basic loadings of tension, compression, shear, torsion, and
-bending.
+relationships among them — across tension, compression, shear, torsion, and bending.
 
-## University of California, Berkeley
+**Guest lectures** in Introduction to Nanotechnology and Microsystems (MCSE-702), Battery Design and
+Manufacturing (CHME-789), and Electrochemical Engineering (CHME-650).
 
-### Computational Nano-micro Mechanics
-*Graduate · Fall 2015, Spring 2017*
+## Course development
 
-Multiscale simulation. Mechanics of materials at both the atomistic and continuum scales, with
-hands-on use of simulation tools including Quantum ESPRESSO and LAMMPS.
+- **AI4Battery**, under development through the ROC-BEAT consortium, with a parallel offering at
+  Alfred University; ROC-BEAT also carries *Machine Vision for Battery Manufacturing*.
+- An **introductory module** packaged for transfer through RIT's articulation agreement with
+  Monroe Community College.
+- A formal **Energy Engineering credential** is a three-year goal of the ROC-BEAT consortium.
 
-### Solid Mechanics and Finite Element Method
-*Undergraduate · Spring 2016*
+## Mentoring in the lab
 
-Deformation analysis of bars, shafts, beams, and columns using energy and variational methods, and
-their generalization to related areas of engineering science; stability analysis of structures;
-computer-aided mathematical techniques and modular programming methods for engineering problems.
+Every trainee co-develops an **Individual Development Plan** and keeps a **hypothesis journal** —
+predictions recorded before each experiment, then revisited in monthly one-on-ones. Everyone
+presents at a national meeting (ECS, MRS) each year. We recruit through RIT's **LSAMP** and
+**CSTEP** programs, and through ROC-BEAT and RIT's **TechTigers** program our activities reach Deaf
+and hard-of-hearing learners alongside their peers.
 
-### Engineering Programming with MATLAB
-*Undergraduate · Spring 2015*
-
-Computer programming for lower-division science and engineering students, stressing hands-on
-programming in the MATLAB environment.
-
-### Introductory Physics
-*Undergraduate · Spring 2014*
-
-Concepts and methods for understanding important physical phenomena, geared toward preparing
-students for upper-division and postgraduate study in biology, medicine, and architecture.
-Three hours of lecture plus four hours of discussion and laboratory per week.
+<!--
+Earlier teaching (UC Berkeley, 2014-2017: Computational Nano-micro Mechanics; Solid Mechanics and
+FEM; Engineering Programming with MATLAB; Introductory Physics) was on the old Wix site. Dropped
+here because the RIT record now stands on its own — restore from git history if wanted.
+-->

@@ -1,13 +1,17 @@
 # CEW Lab roster.
 #
-# Recovered from the live cewlab.org /team page (last published 2024-12-02) — the richest
-# roster on record. The live site listed names and groupings only: no titles, topics, or
-# links. Those fields are left blank here rather than guessed; fill them in and they render
-# automatically.
+# Two sources, reconciled:
+#   - the live cewlab.org /team page (published 2024-12-02) — groupings and the alumni list
+#   - the tenure package drafts (revised 2026-08-16) — levels and project topics
+# Where they disagree the tenure package wins, being ~20 months newer. It moves
+# Joseph Vazquez Mercado from undergraduate to PhD student.
+#
+# NOT added: Ashok Gurung, named as a co-author but never explicitly identified as an
+# advisee. The tenure package's own CV changelog warns that listing a non-advisee as
+# your student is worse than listing none, so he is left out pending confirmation.
 #
 # To add someone: copy a block into the right group. `photo` is a filename in
 # assets/img/team/ — omit it and the navy placeholder is used.
-# `_placeholder.jpg` is intentional for the 13 members with no headshot on file.
 
 groups:
   - name: Principal Investigator
@@ -25,9 +29,11 @@ groups:
   - name: Postdoctoral Researchers
     id: postdocs
     members:
-      - name: Majid Shahbabaei
       - name: Fernando David Cúñez Benalcázar
         photo: Fernando_David_Cunez_Benalcazar.jpg
+        topic: Intergranular degradation of NMC cathode particles
+      - name: Majid Shahbabaei
+        topic: Membrane separation and desalination by molecular dynamics
 
   - name: Research Assistants
     id: ra
@@ -37,27 +43,30 @@ groups:
   - name: PhD Students
     id: phd
     members:
-      - name: Imtiaz Shozib
+      - name: Imtiaz Ahmed Shozib
         photo: Imtiaz_Shozib.jpg
-      - name: Radwa Amr Mahmoud Aly Elawadly
-        photo: Radwa_Amr_Mahmoud_Aly_Elawadly.jpg
+        topic: Interlayers and pressure in solid-state batteries; operando sensing
       - name: Alhamdu Nuhu Bage
         photo: Alhamdu_Nuhu_Bage.jpg
+        topic: Dendrite suppression by mechanical anisotropy
+      - name: Joseph M. Vazquez Mercado
+        photo: Joseph_Vazquez.jpg
+        topic: Granular creep in solid-electrolyte densification
+      - name: Radwa Amr Mahmoud Aly Elawadly
+        photo: Radwa_Amr_Mahmoud_Aly_Elawadly.jpg
+        topic: Flow capacitive deionization for heavy-metal removal
 
   - name: MS Students
     id: ms
     members:
       - name: Dan Brunner
         photo: Dan_Brunner.jpg
-
-  - name: Undergraduate Students
-    id: bs
-    members:
-      - name: Joseph Vazquez
-        photo: Joseph_Vazquez.jpg
+        topic: Selective ion separation with aqueous quadrupole ion traps
 
 # Alumni render in a compact list rather than a photo grid.
 alumni:
+  - name: Shafee Farzanian
+    photo: Shafee_Farzanian.jpg
   - name: Kai Shuang Huang
   - name: Rosella Miller
   - name: Aidan Mahar
@@ -65,8 +74,6 @@ alumni:
     photo: Nathan_Cavic.jpg
   - name: Colton Storey
     photo: Colton_Storey.jpg
-  - name: Shafee Farzanian
-    photo: Shafee_Farzanian.jpg
   - name: Sebastian Harrington
   - name: Cornelius O'Leary
   - name: Donald Leung
