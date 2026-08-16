@@ -76,7 +76,9 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: "3.13"
-          cache: "pip" # caching pip dependencies
+          # No pip cache: the theme's requirements.txt went with the dev files, and
+          # setup-python errors out when cache:pip finds no requirements/pyproject.
+          # The only pip install here is nbconvert.
       - name: Setup Node 🧰
         uses: actions/setup-node@v4
         with:
