@@ -9,8 +9,6 @@ redirect_from:
   - /team
 ---
 
-{% assign ph = '/assets/img/team/_placeholder.jpg' %}
-
 {% for group in site.data.team.groups %}
 {% if group.members.size > 0 %}
 <h2 class="team-heading" id="{{ group.id }}">{{ group.name }}</h2>
@@ -18,11 +16,21 @@ redirect_from:
   {% for m in group.members %}
   <li class="team-card">
     {% if m.photo %}
-      {% assign src = m.photo | prepend: '/assets/img/team/' %}
+      <img src="{{ m.photo | prepend: '/assets/img/team/' | relative_url }}" alt="{{ m.name }}" loading="lazy" width="220" height="220">
     {% else %}
-      {% assign src = ph %}
+      {% comment %}
+        No headshot on file — render the member's initials rather than a generic
+        silhouette, which reads as a broken image at this size.
+      {% endcomment %}
+      {% assign parts = m.name | split: ' ' %}
+      {% assign ini_first = parts.first | slice: 0 %}
+      {% assign initials = ini_first %}
+      {% if parts.size > 1 %}
+        {% assign ini_last = parts.last | slice: 0 %}
+        {% assign initials = ini_first | append: ini_last %}
+      {% endif %}
+      <div class="team-initials" aria-label="{{ m.name }}">{{ initials | upcase }}</div>
     {% endif %}
-    <img src="{{ src | relative_url }}" alt="{{ m.name }}" loading="lazy" width="220" height="220">
     <div class="team-name">{{ m.name }}</div>
     {% if m.role %}<div class="team-role">{{ m.role }}</div>{% endif %}
     {% if m.topic %}<div class="team-topic">{{ m.topic }}</div>{% endif %}

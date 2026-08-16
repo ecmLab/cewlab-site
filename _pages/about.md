@@ -7,15 +7,8 @@ subtitle: >
   <a href="https://www.rit.edu/engineering/">Kate Gleason College of Engineering</a> ·
   Rochester Institute of Technology
 
-profile:
-  align: right
-  image: brand/logo-color.png
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p><strong>Institute Hall (Bldg 73), Rm 2166</strong></p>
-    <p>Rochester Institute of Technology</p>
-    <p>Rochester, NY 14623</p>
-    <p><a href="mailto:howard.tu@rit.edu">howard.tu@rit.edu</a></p>
+# The hero carries the lab's identity, so the theme's profile sidebar is disabled —
+# it would repeat the logo and push the opening paragraph into a narrow column.
 
 selected_papers: true # includes a list of papers marked as "selected={true}"
 social: true # includes social icons at the bottom of the page
@@ -31,55 +24,93 @@ latest_posts:
   limit: 3
 ---
 
+<div class="cew-hero" style="--cew-hero-img: url('{{ '/assets/img/hero/lab-team.jpg' | relative_url }}');">
+  <div class="cew-hero__inner">
+    <img class="cew-hero__logo" src="{{ '/assets/img/brand/logo-white.png' | relative_url }}" alt="CEW Lab">
+    <h1 class="cew-hero__title">Chemistry sets what a cell could store. Mechanics decides how long it survives storing it.</h1>
+    <p class="cew-hero__sub">
+      The Clean Energy and Water Laboratory studies how solids deform while they react — the
+      coupling that limits solid-state batteries and separation membranes — at RIT's Kate Gleason
+      College of Engineering.
+    </p>
+    <div class="cew-hero__cta">
+      <a class="cew-btn cew-btn--primary" href="{{ '/research/' | relative_url }}">Our research</a>
+      <a class="cew-btn cew-btn--ghost" href="{{ '/joinus/' | relative_url }}">Join the lab</a>
+    </div>
+  </div>
+</div>
+
 A battery is a structure that changes shape while it works. Lithium plates into a ceramic that
 cannot accommodate it, cathode particles swell and crack away from their conductive network, and a
-separator that was mechanically sound at assembly is fractured after fifty cycles. **Chemistry sets
-what a cell could store; mechanics decides how long it survives storing it.**
+separator that was mechanically sound at assembly is fractured after fifty cycles.
 
 That coupling — **reactive mechanics**, the behavior of solids that deform while they react — is
-what the **Clean Energy and Water (CEW) Laboratory** studies, and it is the barrier standing between
-solid-state batteries and the manufacturing scale-up the field is now attempting.
+what we study, and it is the barrier standing between solid-state batteries and the manufacturing
+scale-up the field is now attempting. The same physics governs ion transport through a membrane
+under load, so our program spans two application domains that share a mechanism: **electrochemical
+energy storage**, and **separation and recovery of critical materials**.
 
-The same physics governs ion transport through a membrane under load, so our program spans two
-application domains that share a mechanism: **electrochemical energy storage**, and **separation and
-recovery of critical materials**. Both are pursued the same way — first-principles and
-machine-learned simulation to establish mechanism, continuum modeling to reach device scale, and
-in-house electrochemistry to test the prediction.
+Both are pursued the same way — first-principles and machine-learned simulation to establish
+mechanism, continuum modeling to reach device scale, and in-house electrochemistry to test the
+prediction.
 
-## How we work
-
-Our approach is the mutual reinforcement of data, computation, and experiment:
-
-- **Computational simulation** — density functional theory, molecular dynamics, finite element,
-  and phase-field methods reveal the fundamental mechanisms.
-- **Experiment** — electrochemistry, fluid dynamics, and mechanics testing explore new physics,
-  verify theoretical predictions, and prototype inventions in house.
-- **Machine learning** — models identify patterns across large experimental and computational
-  datasets, and accelerate material and structure screening.
+<div class="cew-stats">
+  <div class="cew-stats__inner">
+    <div><span class="cew-stats__n">3,671</span><span class="cew-stats__l">Citations</span></div>
+    <div><span class="cew-stats__n">25</span><span class="cew-stats__l">h-index</span></div>
+    <div><span class="cew-stats__n">46</span><span class="cew-stats__l">Publications</span></div>
+    <div><span class="cew-stats__n">2021</span><span class="cew-stats__l">Lab founded</span></div>
+  </div>
+  <div class="cew-stats__note">Citation metrics from Google Scholar, 1 August 2026.</div>
+</div>
 
 ## Research thrusts
 
-**Solid-state batteries for energy storage.** All-solid-state batteries promise improved safety
-and energy density, but limited cycle life still blocks practical use. We study the chemo-mechanical
-degradation that governs that lifetime — metal dendrites growing through the solid electrolyte, and
-microstructural degradation of the composite cathode on cycling. Active projects cover dendrite
-suppression, anode-free architectures, and minimizing volume change and stack pressure.
+<ul class="cew-cards">
+  <li class="cew-card">
+    <img src="{{ '/assets/img/cards/energy.jpg' | relative_url }}" alt="Solid-state battery research" loading="lazy">
+    <div class="cew-card__body">
+      <h3 class="cew-card__title">Solid-state batteries</h3>
+      <p class="cew-card__text">
+        Dendrite growth through the solid electrolyte, composite-cathode degradation, anode-free
+        architectures, and the granular creep that governs how electrolytes densify.
+      </p>
+      <a class="cew-card__link" href="{{ '/research/' | relative_url }}">Read more →</a>
+    </div>
+  </li>
+  <li class="cew-card">
+    <img src="{{ '/assets/img/cards/water.jpg' | relative_url }}" alt="Water purification research" loading="lazy">
+    <div class="cew-card__body">
+      <h3 class="cew-card__title">Water &amp; critical materials</h3>
+      <p class="cew-card__text">
+        Capacitive deionization for desalination and heavy-metal removal, lithium recovery from
+        brine, and ion transport through membranes under confinement.
+      </p>
+      <a class="cew-card__link" href="{{ '/research/' | relative_url }}">Read more →</a>
+    </div>
+  </li>
+  <li class="cew-card">
+    <img src="{{ '/assets/img/cards/framework.jpg' | relative_url }}" alt="Electro-chemo-mechanics framework" loading="lazy">
+    <div class="cew-card__body">
+      <h3 class="cew-card__title">Electro-chemo-mechanics</h3>
+      <p class="cew-card__text">
+        One framework beneath both: DFT, molecular dynamics, phase field, and finite element
+        modeling coupled with AI-accelerated multiscale methods.
+      </p>
+      <a class="cew-card__link" href="{{ '/research/' | relative_url }}">Read more →</a>
+    </div>
+  </li>
+</ul>
 
-**Capacitive deionization for water purification.** Freshwater scarcity is already critical across
-arid regions. Capacitive deionization (CDI) desalinates using charged electrodes, and is
-energy-efficient, low-cost, and environmentally benign. We study ion transport in CDI channels and
-ion-exchange membranes, lithium recovery from brine and seawater, heavy-metal removal, and
-high-throughput screening of electrode and membrane materials.
-
-**Electro-chemo-mechanics as a general framework.** Underneath both application areas sits one
-modeling framework coupling solid mechanics, ion and electron conduction, electrodeposition, and
-fracture. Developing it — and the data-driven and AI-based methods that make it tractable — is a
-research thrust in its own right.
-
-The two application areas also meet: we have a patented hybrid CDI–solid-state-battery device that
-combines energy generation with lithium capture.
-
----
-
-**We are hiring.** The CEW Lab has openings for MS and PhD students and postdocs.
-See [Join Us]({{ '/joinus/' | relative_url }}) for what we look for and how to apply.
+<div class="cew-band">
+  <div class="cew-band__inner">
+    <h2>We are hiring</h2>
+    <p>
+      The CEW Lab has openings for <strong>MS and PhD students and postdoctoral researchers</strong>
+      in both research directions. Experience with electrochemistry is welcome but not required to
+      start — we look for a background in solid or fluid mechanics and in continuum or atomic-scale
+      modeling.
+    </p>
+    <a class="cew-btn cew-btn--primary" href="{{ '/joinus/' | relative_url }}">See openings</a>
+  </div>
+</div>

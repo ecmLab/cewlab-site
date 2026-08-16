@@ -27,6 +27,11 @@ through the solid electrolyte, and microstructural degradation of the composite 
 methods that capture these mechanisms are what let us design materials and structures instead of
 screening them by trial and error.
 
+<figure class="cew-figure">
+  <img src="{{ '/assets/img/cards/energy.jpg' | relative_url }}" alt="Composite-cathode and solid-electrolyte microstructure — the length scale where chemo-mechanical degradation sets cycle life." loading="lazy">
+  <figcaption>Composite-cathode and solid-electrolyte microstructure — the length scale where chemo-mechanical degradation sets cycle life.</figcaption>
+</figure>
+
 **Project 1 — Dendrite growth at the Li-metal anode / solid-electrolyte interface.**
 Electrodeposition and mechanical stability at the interface during plating; the role of creep and
 plastic flow of the metal; how mixed ionic–electronic conduction drives metal propagation into the
@@ -54,6 +59,11 @@ deionization (CDI) desalinates water using charged electrodes and is energy-effi
 cost-effective, and environmentally benign. Better membrane and electrode materials are what set its
 ceiling, and computational investigation is how we get there faster than synthesis alone allows.
 
+<figure class="cew-figure">
+  <img src="{{ '/assets/img/cards/water.jpg' | relative_url }}" alt="Ion and water transport through nanoconfined channels, resolved by molecular dynamics." loading="lazy">
+  <figcaption>Ion and water transport through nanoconfined channels, resolved by molecular dynamics.</figcaption>
+</figure>
+
 **Project 1 — Transport in membranes and CDI channels.**
 Ion and water transport mechanisms in CDI channels and ion-exchange membranes; interlayer spacing
 and separation capability of graphene-oxide membranes in organic solvents; swelling of GO membranes
@@ -77,6 +87,11 @@ Underneath both application areas is a single modeling framework that couples so
 and electron conduction, electrodeposition, and fracture — Butler–Volmer reaction kinetics, diffusion
 and migration in the active material, phase segregation, electronic conduction, and fracture
 criteria, solved across steady-state, time-dependent, and fully coupled formulations.
+
+<figure class="cew-figure">
+  <img src="{{ '/assets/img/cards/framework.jpg' | relative_url }}" alt="Microstructure of the composite cathode, from electron microscopy through to the discrete-element representation used in simulation." loading="lazy">
+  <figcaption>Microstructure of the composite cathode, from electron microscopy through to the discrete-element representation used in simulation.</figcaption>
+</figure>
 
 Building that framework is a research thrust in its own right, and spans density functional theory,
 molecular dynamics, the finite element method, phase-field modeling, and discrete-element and CFD

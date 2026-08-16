@@ -1,14 +1,19 @@
-# this file contains the social media links and usernames of the author
-# the socials will be displayed in the order they are defined here
-# for more information, please refer to the documentation of jekyll-socials plugin: https://github.com/george-gca/jekyll-socials
-cv_pdf: /assets/pdf/example_pdf.pdf # path to your CV PDF file
-email: you@example.com # your email address
-inspirehep_id: 1010907 # Inspire HEP author ID
-rss_icon: true # comment this line to hide the RSS icon
-scholar_userid: qc6CJjYAAAAJ # your Google Scholar ID
-# wechat_qr: # filename of your wechat qr-code saved as an image (e.g., wechat-qr.png if saved to assets/img/wechat-qr.png)
-# whatsapp_number: # your WhatsApp number (full phone number in international format. Omit any zeroes, brackets, or dashes when adding the phone number in international format.)
-custom_social: # can be any name here other than the ones already defined in the jekyll-socials plugin
-  logo: https://www.alberteinstein.com/wp-content/uploads/2024/03/cropped-favicon-192x192.png # can be png, svg, jpg
-  title: Custom Social
-  url: https://www.alberteinstein.com/
+# Social/profile links rendered under the home page and in search.
+# Anything left commented out simply does not render an icon.
+#
+# cv_pdf is intentionally absent: both CVs recovered from the Wix site were stale
+# (one a pre-2021 LBNL postdoc CV). Drop a current file at assets/pdf/CV_Tu.pdf and
+# uncomment the line below.
+# cv_pdf: /assets/pdf/CV_Tu.pdf
+
+# Key names must match jekyll-socials exactly. Anything it does not recognise is
+# treated as a *custom* social and requires a `logo:`, so a typo does not degrade
+# gracefully — it aborts the build with "undefined method 'split' for nil".
+# Supported here: cv_pdf, email, github_username, linkedin_username, orcid_id,
+# research_gate_profile, rss_icon, scholar_userid, semanticscholar_id.
+email: howard.tu@rit.edu
+scholar_userid: _d2LuhQAAAAJ
+linkedin_username: qingsong-howard-tu-02369a73
+research_gate_profile: Qingsong-Tu-2
+github_username: ecmLab
+rss_icon: true
