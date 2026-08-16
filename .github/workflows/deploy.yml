@@ -97,10 +97,10 @@ jobs:
           pip3 install --upgrade nbconvert
           export JEKYLL_ENV=production
           bundle exec jekyll build
-      - name: Purge unused CSS 🧹
-        run: |
-          npm install -g purgecss
-          purgecss -c purgecss.config.js
+      # The upstream theme runs purgecss here. Dropped along with its config file:
+      # the CEW site is small enough that the unpurged stylesheet is not worth an
+      # extra global npm install and a class of "style vanished in production only"
+      # bugs that never reproduce locally.
       - name: Deploy 🚀
         if: github.event_name != 'pull_request'
         uses: JamesIves/github-pages-deploy-action@v4
