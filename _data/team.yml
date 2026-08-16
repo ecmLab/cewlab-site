@@ -1,0 +1,81 @@
+# CEW Lab roster.
+#
+# Recovered from the live cewlab.org /team page (last published 2024-12-02) — the richest
+# roster on record. The live site listed names and groupings only: no titles, topics, or
+# links. Those fields are left blank here rather than guessed; fill them in and they render
+# automatically.
+#
+# To add someone: copy a block into the right group. `photo` is a filename in
+# assets/img/team/ — omit it and the navy placeholder is used.
+# `_placeholder.jpg` is intentional for the 13 members with no headshot on file.
+
+groups:
+  - name: Principal Investigator
+    id: pi
+    members:
+      - name: Howard Qingsong Tu
+        role: Assistant Professor, Mechanical Engineering
+        photo: Howard_Tu.jpg
+        email: howard.tu@rit.edu
+        links:
+          scholar: https://scholar.google.com/citations?user=_d2LuhQAAAAJ&hl=en
+          researchgate: https://www.researchgate.net/profile/Qingsong-Tu-2
+          linkedin: https://www.linkedin.com/in/qingsong-howard-tu-02369a73/
+
+  - name: Postdoctoral Researchers
+    id: postdocs
+    members:
+      - name: Majid Shahbabaei
+      - name: Fernando David Cúñez Benalcázar
+        photo: Fernando_David_Cunez_Benalcazar.jpg
+
+  - name: Research Assistants
+    id: ra
+    members:
+      - name: Junyi Shangguan
+
+  - name: PhD Students
+    id: phd
+    members:
+      - name: Imtiaz Shozib
+        photo: Imtiaz_Shozib.jpg
+      - name: Radwa Amr Mahmoud Aly Elawadly
+        photo: Radwa_Amr_Mahmoud_Aly_Elawadly.jpg
+      - name: Alhamdu Nuhu Bage
+        photo: Alhamdu_Nuhu_Bage.jpg
+
+  - name: MS Students
+    id: ms
+    members:
+      - name: Dan Brunner
+        photo: Dan_Brunner.jpg
+
+  - name: Undergraduate Students
+    id: bs
+    members:
+      - name: Joseph Vazquez
+        photo: Joseph_Vazquez.jpg
+
+# Alumni render in a compact list rather than a photo grid.
+alumni:
+  - name: Kai Shuang Huang
+  - name: Rosella Miller
+  - name: Aidan Mahar
+  - name: Nathan Cavic
+    photo: Nathan_Cavic.jpg
+  - name: Colton Storey
+    photo: Colton_Storey.jpg
+  - name: Shafee Farzanian
+    photo: Shafee_Farzanian.jpg
+  - name: Sebastian Harrington
+  - name: Cornelius O'Leary
+  - name: Donald Leung
+  - name: Taylor Kranbuhl
+  - name: Elijah Velazquez
+    photo: Elijah_Velazquez.jpg
+  - name: Joseph Santiano
+  - name: Eli Wolfe
+  - name: Winervil James
+    photo: Winervil_James.jpg
+  - name: Qige Chen
+  - name: Shreesh Rajesh Pol

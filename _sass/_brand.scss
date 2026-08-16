@@ -1,0 +1,129 @@
+/*******************************************************************************
+ * CEW Lab brand layer
+ *
+ * Palette is taken verbatim from the lab's brand kit
+ * (advertisement/logo/cew-lab-color-palette.png):
+ *   navy  #202046  primary / wordmark / footer
+ *   blue  #3886CE  links, accents, dark-mode theme color
+ *   amber #ffa62e  highlights, active nav, callouts
+ * RIT orange #F76902 is reserved for the KGCOE affiliation lockup only,
+ * so it never competes with the lab's own accent colors.
+ *
+ * Loaded last from assets/css/main.scss so these win over the theme gem's
+ * defaults without forking any of its partials — the theme can be upgraded
+ * with `bundle update al_folio_core` and only this file needs review.
+ ******************************************************************************/
+
+$cew-navy: #202046;
+$cew-navy-light: #2e2e63;
+$cew-blue: #3886ce;
+$cew-blue-dark: #2a6ba6;
+$cew-amber: #ffa62e;
+$cew-rit-orange: #f76902;
+
+:root {
+  --cew-navy: #{$cew-navy};
+  --cew-blue: #{$cew-blue};
+  --cew-amber: #{$cew-amber};
+  --cew-rit-orange: #{$cew-rit-orange};
+
+  --global-theme-color: #{$cew-navy};
+  --global-hover-color: #{$cew-blue};
+  --global-hover-text-color: #ffffff;
+  --global-highlight-color: #{$cew-blue-dark};
+  --global-footer-bg-color: #{$cew-navy};
+  --global-footer-text-color: rgba(255, 255, 255, 0.72);
+  --global-footer-link-color: #{$cew-amber};
+  --global-divider-color: rgba(32, 32, 70, 0.12);
+}
+
+/*******************************************************************************
+ * Team grid (/people)
+ ******************************************************************************/
+
+.team-heading {
+  margin: 2.2rem 0 1rem;
+  padding-bottom: 0.35rem;
+  border-bottom: 2px solid var(--global-divider-color);
+  font-size: 1.32rem;
+  font-weight: 600;
+}
+
+.team-grid {
+  display: grid;
+  /* auto-fill rather than auto-fit: a group with one member keeps a card-width
+     card instead of stretching it across the full row. */
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 1.6rem 1.2rem;
+  margin: 0 0 1.6rem;
+  padding: 0;
+  list-style: none;
+}
+
+.team-card {
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 160px;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 3px solid transparent;
+    transition:
+      border-color 0.18s ease,
+      transform 0.18s ease;
+  }
+
+  &:hover img {
+    border-color: var(--cew-amber);
+    transform: translateY(-3px);
+  }
+}
+
+.team-name {
+  margin-top: 0.6rem;
+  font-weight: 600;
+  line-height: 1.25;
+}
+
+.team-role,
+.team-topic {
+  font-size: 0.82rem;
+  line-height: 1.35;
+  color: var(--global-text-color-light);
+}
+
+.team-topic {
+  font-style: italic;
+}
+
+.team-links {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+
+  a + a {
+    margin-left: 0.5rem;
+  }
+}
+
+.team-alumni {
+  line-height: 2;
+  color: var(--global-text-color-light);
+
+  span {
+    white-space: nowrap;
+  }
+}
+
+/* Dark mode: navy is too close to the page background to read as an accent,
+   so the roles rotate — blue leads and amber does the highlighting. */
+html[data-theme="dark"] {
+  --global-theme-color: #{$cew-blue};
+  --global-hover-color: #{$cew-amber};
+  --global-hover-text-color: #{$cew-navy};
+  --global-highlight-color: #{$cew-amber};
+  --global-footer-bg-color: #14142e;
+  --global-footer-link-color: #{$cew-amber};
+  --global-divider-color: rgba(255, 255, 255, 0.12);
+}
