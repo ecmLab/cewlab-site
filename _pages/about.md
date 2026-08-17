@@ -27,7 +27,7 @@ latest_posts:
 <div class="cew-hero" style="--cew-hero-img: url('{{ '/assets/img/hero/lab-team.jpg' | relative_url }}');">
   <div class="cew-hero__inner">
     <img class="cew-hero__logo" src="{{ '/assets/img/brand/logo-white.png' | relative_url }}" alt="CEW Lab">
-    <h1 class="cew-hero__title">Chemistry sets what a cell could store. Mechanics decides how long it survives storing it.</h1>
+    <h1 class="cew-hero__title">Materials set what a cell could store. Mechanics decides how long it survives storing it.</h1>
     <p class="cew-hero__sub">
       The Clean Energy and Water Laboratory studies how solids deform while they react — the
       coupling that limits solid-state batteries and separation membranes — at RIT's Kate Gleason
@@ -54,14 +54,19 @@ Both are pursued the same way — first-principles and machine-learned simulatio
 mechanism, continuum modeling to reach device scale, and in-house electrochemistry to test the
 prediction.
 
+{% assign s = site.data.scholar %}
 <div class="cew-stats">
   <div class="cew-stats__inner">
-    <div><span class="cew-stats__n">3,671</span><span class="cew-stats__l">Citations</span></div>
-    <div><span class="cew-stats__n">25</span><span class="cew-stats__l">h-index</span></div>
-    <div><span class="cew-stats__n">46</span><span class="cew-stats__l">Publications</span></div>
+    <div><span class="cew-stats__n">{{ s.citations_display }}</span><span class="cew-stats__l">Citations</span></div>
+    <div><span class="cew-stats__n">{{ s.h_index }}</span><span class="cew-stats__l">h-index</span></div>
+    <div><span class="cew-stats__n">{{ s.publications }}</span><span class="cew-stats__l">Publications</span></div>
     <div><span class="cew-stats__n">2021</span><span class="cew-stats__l">Lab founded</span></div>
   </div>
-  <div class="cew-stats__note">Citation metrics from Google Scholar, 1 August 2026.</div>
+  <div class="cew-stats__note">
+    Citations and h-index from
+    <a href="https://scholar.google.com/citations?user={{ s.scholar_id }}&amp;hl=en">Google Scholar</a>,
+    updated {{ s.updated_display }}.
+  </div>
 </div>
 
 ## Research thrusts

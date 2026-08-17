@@ -1,0 +1,18 @@
+# Bibliometrics shown in the home-page stat band.
+#
+# AUTO-GENERATED — do not hand-edit; changes are overwritten.
+# Refreshed monthly on the 17th by .github/workflows/update-scholar.yml, which runs
+# bin/update_scholar.py against the Google Scholar profile and counts the entries in
+# _bibliography/papers.bib. Run that workflow manually from the Actions tab any time.
+#
+# If Google Scholar blocks the runner (it rate-limits datacenter IPs), the script
+# leaves this file untouched rather than writing zeros, so the band keeps showing the
+# last good numbers and `updated` tells you how stale they are.
+
+citations: 3679
+citations_display: "3,679"
+h_index: 25
+publications: 46
+scholar_id: _d2LuhQAAAAJ
+updated: "2026-08-17"
+updated_display: "17 August 2026"

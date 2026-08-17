@@ -1,0 +1,46 @@
+name: Update Scholar metrics
+
+# Monthly on the 17th at 06:00 UTC (~02:00 America/New_York), matching the day the
+# stat band was first published. Also runnable on demand from the Actions tab.
+#
+# GitHub skips scheduled workflows in repositories with no activity for 60 days;
+# any push re-arms it. If Google Scholar rate-limits the runner the script exits 0
+# without writing, so a blocked month is a no-op rather than a failed build.
+on:
+  schedule:
+    - cron: "0 6 17 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: update-scholar
+  cancel-in-progress: false
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.13"
+
+      - name: Refresh metrics
+        run: python3 bin/update_scholar.py
+
+      - name: Commit if changed
+        run: |
+          if git diff --quiet -- _data/scholar.yml; then
+            echo "No change to _data/scholar.yml — nothing to commit."
+            exit 0
+          fi
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add _data/scholar.yml
+          git commit -m "Update Scholar metrics (automated)"
+          git push
