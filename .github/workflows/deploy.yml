@@ -6,6 +6,11 @@ on:
       - master
       - main
     paths:
+      # _sass/** and bin/** are additions to the upstream list: the theme's filter
+      # covers .md/.yml/.bib/.html/.js but not .scss, so a commit touching only
+      # stylesheets silently never deployed.
+      - "_sass/**"
+      - "bin/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
@@ -33,6 +38,11 @@ on:
       - master
       - main
     paths:
+      # _sass/** and bin/** are additions to the upstream list: the theme's filter
+      # covers .md/.yml/.bib/.html/.js but not .scss, so a commit touching only
+      # stylesheets silently never deployed.
+      - "_sass/**"
+      - "bin/**"
       - "assets/**"
       - "**.bib"
       - "**.html"
