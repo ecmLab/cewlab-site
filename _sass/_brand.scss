@@ -78,8 +78,20 @@ html[data-theme="dark"] h4 {
   color: #eef1f8;
 }
 
+/* Body copy. The theme renders prose at the 16px root size, which is small for
+   long-form reading at this measure. Raised on the CONTAINER rather than on `p`
+   so it cascades to lists, tables and definition text as well — and because every
+   component in this file sizes itself in rem, none of them scale with it. */
+.post > article,
 .post .post-content,
 .page-content {
+  font-size: 1.15rem;
+  line-height: 1.75;
+}
+
+.post .post-content,
+.page-content,
+.post > article {
   h2 {
     margin-top: 2.4rem;
     font-size: 1.62rem;
@@ -90,8 +102,9 @@ html[data-theme="dark"] h4 {
     font-size: 1.22rem;
   }
 
-  p {
-    line-height: 1.72;
+  p,
+  li {
+    line-height: 1.75;
   }
 }
 
@@ -204,7 +217,7 @@ html {
     max-width: 56ch;
     margin: 0 0 1.9rem;
     color: rgba(255, 255, 255, 0.86);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     line-height: 1.65;
   }
 
