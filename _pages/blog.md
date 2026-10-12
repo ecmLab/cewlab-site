@@ -3,6 +3,7 @@ layout: default
 permalink: /blog/
 title: blog
 nav: false
+published: false
 nav_order: 1
 pagination:
   enabled: true
@@ -15,6 +16,15 @@ pagination:
     before: 1 # The number of links before the current page
     after: 3 # The number of links after the current page
 ---
+
+<!--
+Not published. al-folio ships these pages filled with Albert Einstein demo content
+(Nobel Prize, einstein@example.com). `nav: false` only removes the menu entry — the
+page still builds and is crawlable, and these were live on cewlab.org. `published:
+false` stops Jekyll generating them at all. Delete the flag to bring a page back,
+but replace the demo data in _data/cv.yml first.
+-->
+
 
 <div class="post">
 

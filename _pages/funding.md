@@ -3,9 +3,17 @@ layout: page
 permalink: /funding/
 title: funding
 description: Sponsors supporting the CEW Lab's research.
-nav: true
+nav: false
+published: false
 nav_order: 7
 ---
+
+<!--
+HIDDEN at the PI's request (Oct 2026). published:false stops Jekyll generating the
+page at all, so /funding/ returns 404 and cannot be crawled; nav:false alone would only
+have removed the menu entry while leaving the page live. The file is kept rather than
+deleted so the content is recoverable — set nav: true to restore it.
+-->
 
 The lab's work is supported by federal, state, and industry sponsors. We are grateful to all of them.
 

@@ -4,10 +4,20 @@ title: projects
 permalink: /projects/
 description: A growing collection of your cool projects.
 nav: false
+published: false
 nav_order: 3
 display_categories: [work, fun]
 horizontal: false
 ---
+
+<!--
+Not published. al-folio ships these pages filled with Albert Einstein demo content
+(Nobel Prize, einstein@example.com). `nav: false` only removes the menu entry — the
+page still builds and is crawlable, and these were live on cewlab.org. `published:
+false` stops Jekyll generating them at all. Delete the flag to bring a page back,
+but replace the demo data in _data/cv.yml first.
+-->
+
 
 <!-- pages/projects.md -->
 <div class="projects">
