@@ -9,10 +9,10 @@
 # leaves this file untouched rather than writing zeros, so the band keeps showing the
 # last good numbers and `updated` tells you how stale they are.
 
-citations: 3827
-citations_display: "3,827"
-h_index: 26
+citations: 3842
+citations_display: "3,842"
+h_index: 27
 publications: 46
 scholar_id: _d2LuhQAAAAJ
-updated: "2026-10-12"
-updated_display: "12 October 2026"
+updated: "2026-10-17"
+updated_display: "17 October 2026"
